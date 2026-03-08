@@ -1,23 +1,174 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Memoirs of Aron Jacob Perkel</title>
-    <style>
-        body { font-family: 'Georgia', serif; line-height: 1.6; color: #333; max-width: 800px; margin: auto; padding: 20px; background-color: #f4f1ea; }
-        h1, h2 { color: #5d4037; border-bottom: 1px solid #d7ccc8; }
-        .timeline { border-left: 3px solid #8d6e63; padding-left: 20px; margin-left: 10px; }
-        .event { margin-bottom: 15px; }
-        .date { font-weight: bold; color: #8d6e63; }
-        .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-        .gallery-item { background: #fff; padding: 10px; border: 1px solid #ddd; text-align: center; }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Perkel Family History</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #8d6e63;
+            --bg: #ffffff;
+            --text: #333333;
+        }
+
+        body {
+            font-family: 'Crimson Text', serif;
+            line-height: 1.8;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            color: var(--primary);
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        p { margin-bottom: 20px; font-size: 1.1rem; }
+
+        .timeline-container {
+            margin: 40px 0;
+            border-left: 2px solid var(--accent);
+            padding-left: 30px;
+        }
+
+        .timeline-entry {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .timeline-entry::before {
+            content: '';
+            position: absolute;
+            left: -37px;
+            top: 10px;
+            width: 12px;
+            height: 12px;
+            background: var(--accent);
+            border-radius: 50%;
+        }
+
+        .family-section {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 5px;
+            margin: 40px 0;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #888;
+            margin-top: 60px;
+            padding-bottom: 40px;
+        }
+
+		.family-tree {
+			padding: 20px;
+			background: #fdfbf7;
+			border: 1px dashed var(--accent);
+			border-radius: 8px;
+		}
+		.tree-branch {
+			margin-left: 20px;
+			border-left: 2px solid var(--accent);
+			padding-left: 15px;
+			position: relative;
+		}
+		.tree-branch::before {
+			content: "→";
+			position: absolute;
+			left: -12px;
+			color: var(--accent);
+		}
+		.member { font-weight: bold; color: var(--primary); }
+		.details { font-style: italic; font-size: 0.9rem; color: #666; }
+
     </style>
 </head>
 <body>
-    <h1>Memoirs of Aron Jacob Perkel (1882-1975)</h1>
-    <p><i>"This is being written in the evening in the month of Kislev, in the year 1930."</i></p>
+
+<div class="container">
+	
+	<h1>My Family Project</h1>
+    <h2>Jessica Perkel, Grade 7 King David Ariel, Johannesburg, South Africa</h2>
+    <p><i>My family project is on my Great Great Grandfather, Aron Jacob Perkel and his life starting in Adamov, Poland in 1882 and my Great Grandfather Jonah Perkel, born in 1924.</i></p>
     
-    <h2>Life Summary</h2>
-    <p>Aron Jacob Perkel was a master watchmaker whose life spanned continents and historical eras. Born in Adamov, Poland, he survived wars and revolutions through his wit and his trade. After establishing himself in Warsaw, he migrated to Israel in 1924 before eventually settling in South Africa.</p>
-    <p><a href="https://github.com/DeepPurple77/MyFamily/blob/259e2b04224b7a2ad26a3a0ead588b2ea49f7b57/A%20J%20Perkel%20Memoirs.pdf">A J Perkel Memoirs</a></p>
+    <p><a href="https://deeppurple77.github.io/MyFamily/A%20J%20Perkel%20Memoirs.pdf">A J Perkel Memoirs</a></p>
+    
+    <div class="timeline-container">
+        <div class="timeline-entry"><strong>1898:</strong> At the age of 16, Aron Jacob started self-studying Hebrew and Russian</div>
+        <div class="timeline-entry"><strong>1900:</strong> He moved to Warsaw to apprentice as a watch maker</div>
+        <div class="timeline-entry"><strong>1904:</strong> He began working at Kalman Rootstein’s shop in Nalvechi Street in Warsaw as a watch maker</div>
+        <div class="timeline-entry"><strong>1905:</strong> Simulated a disability by paying 25 rubles to have his leg broken to avoid conscription during the Russian-Japanese War</div>
+        <div class="timeline-entry"><strong>1907:</strong> Married Toybe Sheindel in Kotzk Poland</div>
+        <div class="timeline-entry"><strong>1907 – 1923:</strong> The couple have many children during this time. Some of their children pass away due to the complications and illness. World War One occurs and life in Poland is extremely difficult, brutally cold winters and little food.</div>
+        <div class="timeline-entry"><strong>1924:</strong> The family move to Jaffa, Palestine (Israel) to start a new life.</div>
+        <div class="timeline-entry"><strong>1924:</strong> My Great Grandfather, Jonah Perkel is born in Tel Aviv. Tragically, his mother passes away days after giving birth.</div>
+        <div class="timeline-entry"><strong>1930:</strong> Aron Jacob moves to Cape Town, South Africa to try earning money to support his family. He is later joined by his second wife Feigel and 4 of his sons, Avraham, Moshe, Nathan and Jonah.</div>
+        <div class="timeline-entry"><strong>1931 to 1949:</strong> Aron Jacob moves between Cape Town, Johannesburg and Israel. Jonah (my Great Grandfather) and his brother Nathan are left in the Arcadia Orphanage in Johannesburg while his father tries to earn a living.</div>
+        <div class="timeline-entry"><strong>1950:</strong> He eventually returns to Israel to live out his remaining years.</div>
+        <div class="timeline-entry"><strong>1975:</strong> Aron Jacob passes away at the age of 93.</div>
+    </div>
+    
+    <p>My Great Grandfather Jonah, lived in Arcadia from approximately 1934 to 1942. After his Barmitzvah in 1937, Jonah taught other boys in Arcadia their Barmitzvah portions and gave Chedar classes. He often lead the Shabbos services and services during Yom Tavim. Even after leaving Arcadia at the age of 18, he continued to return to teach, lead services and was an extremely highly regarded member of the community.</p>
+
+    <p>Jonah went on to study to be an Charted Accountant, which became his lifelong career. He married Maisie Perkel in 1949. Jonah and Maisie had 5 sons, Raymond (Raphael Mendel), Trevor (Tuvia), Colin (Nissan), Charles (Bezalel), Adrian (Arya).</p>
+
+    <div class="family-section">
+        <p>Trevor Perkel, my Grandfather and my Grandmother Marilyn Friedman got married in 1974. They have 3 sons, Dale (Ephraim), Brent (Dovbear) and Craig (Chaim). Dale was born in 1977 and is my father. He married my mother, Danielle Shiller (Dina) in 2008 and they have 2 children, Sarah (Sara) and myself, Jessica (Jona). I was born in 2013 and I am currently 12 years old and will turn 13 in September 2026.</p>
+    </div>
+
+    <p>I was named after my Great Grandfather Jonah, the name Jona or Jonah means Dove. My parents named me after him as he passed away in 2010 and they wanted to give me a connection to him. Jonah was a well-respected person in the community, he was successful in business and even testified in the Rivonia Treason Trial in support of Nelson Mandela and the ANC. Jonah was 84 when he died, leaving behind his 5 sons and wife Maisie. Maisie passed away in 2017, I was fortunate enough to have met her and fondly remember her.</p>
+
+    <p>From about 1930 to 1969, Aron Jacob created a diary called his memoirs in which he chronicled his life. The memoirs were originally hand-written in Hebrew by Aron Jacob, they were later translated into English by my Great Grandfather Jonah and finally typed and digitized so that the memoirs would remain a valued piece of our family history.</p>
+
+	<div class="family-tree">
+    <div class="member">Aron Jacob Perkel (1882–1975)</div>
+    <div class="details">Married Toybe Sheindel (1907)</div>
+    
+    <div class="tree-branch">
+        <div class="member">Jonah Perkel (1924–2010)</div>
+        <div class="details">Married Maisie Perkel (1949)</div>
+        
+        <div class="tree-branch">
+            <div class="member">Trevor Perkel</div>
+            <div class="details">Married Marilyn Friedman (1974)</div>
+            
+            <div class="tree-branch">
+                <div class="member">Dale Perkel (b. 1977)</div>
+                <div class="details">Married Danielle Shiller (2008)</div>
+                
+                <div class="tree-branch">
+                    <div class="member">Sarah Perkel (b. 2010)</div>
+                </div>
+                <div class="tree-branch">
+                    <div class="member">Jessica (Jona) Perkel (b. 2013)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+</div>
+
+<footer>
+    <p>Compiled by Jessica Perkel &bull; 2026</p>
+</footer>
+
 </body>
 </html>
